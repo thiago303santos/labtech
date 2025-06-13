@@ -1,11 +1,11 @@
 class FizzBuzz:
-
     @staticmethod
-    def run(number: int) -> None:
-        if number % 3 == 0 and number % 5 == 0:
+    def run(n: int) -> str:
+        if n % 3 == 0 and n % 5 == 0:
             return "FizzBuzz"
-        if number % 5 == 0:
-            return "Buzz"
-        if number % 3 == 0:
+        elif n % 3 == 0:
             return "Fizz"
-        return f"{number}"
+        elif n % 5 == 0:
+            return "Buzz"
+        else:
+            return str(n)
